@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <section className='relative'>
-      <div className='sm:hidden flex justify-between items-center mx-2 my-4'>
+      <div className='sm:hidden flex justify-between items-center px-2 py-4 bg-white/90 backdrop-blur fixed left-0 right-0 -top-4'>
         <button
           className='bg-gray-50 p-2 border border-gray-300 rounded-md'
           onClick={() => setOpenNav(true)}
@@ -30,9 +30,10 @@ const Navbar = () => {
         </button>
       </div>
       <nav
-        className={`bg-white p-2 sm:p-0 topnav absolute sm:static -top-0 bottom-0 ${
+        id='topnav'
+        className={`bg-white backdrop-blur sm:bg-white/90 p-2 sm:p-0 fixed -top-4 sm:left-0 sm:right-0 sm:-top-4 ${
           openNav ? "-top-4 -left-0" : "-left-full"
-        } w-full flex flex-col sm:flex-row justify-between items-center py-6 sm:py-0 sm:px-6 h-screen sm:h-full transition-all duration-500`}
+        } w-full flex flex-col sm:flex-row justify-between items-center py-6 sm:py-2 sm:px-6 -bottom-6 sm:h-fit transition-all duration-500`}
       >
         <div className='w-full sm:w-fit'>
           <button
@@ -47,7 +48,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul className='flex flex-col sm:flex-row justify-center items-center gap-6 font-bold text-xl sm:font-semibold sm:text-lg text-gray-700'>
+        <ul className='flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-10 font-bold text-xl sm:font-semibold sm:text-lg text-gray-700'>
           <Link className={`link ${pathname === "/" ? "active" : ""}`} href='/'>
             <li>Home</li>
           </Link>
@@ -59,7 +60,7 @@ const Navbar = () => {
           </Link>
           <Link
             className={`link ${pathname === "/hire" ? "active" : ""}`}
-            href='/hire'
+            href='/talents'
           >
             <li>Hire Talent</li>
           </Link>
