@@ -3,18 +3,36 @@
 @tailwind utilities;
 
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 nav#topnav ul a.active li {
     @apply text-blue-600;
 }
 
 nav#topnav ul a li::after {
     content: "";
-    @apply block h-1 w-0 bg-blue-400 transition-all duration-500 rounded-md;
+    @apply block h-0.5 w-0 bg-blue-400 transition-all duration-500 rounded-md;
 }
 
 nav#topnav ul a:not(.active) li::after:hover {
     content: "";
-    @apply block h-1 sm:w-full bg-blue-400;
+    @apply block h-0.5 sm:w-full bg-blue-400;
+}
+
+nav#topnav ul a.active li::after {
+    content: "";
+    @apply block h-1 w-1 rounded-full mx-auto bg-blue-400;
 }
 
 #hero {

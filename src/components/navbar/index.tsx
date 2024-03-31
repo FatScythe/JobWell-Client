@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <section className='relative'>
-      <div className='sm:hidden flex justify-between items-center px-2 py-4 bg-white/90 backdrop-blur fixed left-0 right-0 -top-4'>
+      <div className='sm:hidden flex justify-between items-center px-2 py-4 bg-white/90 backdrop-blur fixed z-10 left-0 right-0 -top-4'>
         <button
           className='bg-gray-50 p-2 border border-gray-300 rounded-md'
           onClick={() => setOpenNav(true)}
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       <nav
         id='topnav'
-        className={`bg-white backdrop-blur sm:bg-white/90 p-2 sm:p-0 fixed -top-4 sm:left-0 sm:right-0 sm:-top-4 ${
+        className={`bg-white backdrop-blur sm:bg-white/90 p-2 sm:p-0 fixed z-20 -top-4 sm:left-0 sm:right-0 sm:-top-4 ${
           openNav ? "-top-4 -left-0" : "-left-full"
         } w-full flex flex-col sm:flex-row justify-between items-center py-6 sm:py-2 sm:px-6 -bottom-6 sm:h-fit transition-all duration-500`}
       >
@@ -43,12 +43,12 @@ const Navbar = () => {
             <CancelIcon className='w-14 h-14 pr-3' />
           </button>
           <div className='flex flex-col justify-center items-center gap-2'>
-            <Image src={logo} alt='logo' width={100} height={100} />
+            <Image src={logo} alt='logo' width={70} height={70} />
             <h3 className='sm:hidden font-bold text-3xl'>JobWell</h3>
           </div>
         </div>
 
-        <ul className='flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-10 font-bold text-xl sm:font-semibold sm:text-lg text-gray-700'>
+        <ul className='flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-10 text-base font-semibold text-gray-700'>
           <Link className={`link ${pathname === "/" ? "active" : ""}`} href='/'>
             <li>Home</li>
           </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
           </Link>
         </ul>
 
-        <div className='flex flex-col sm:flex-row justify-evenly items-center w-full sm:w-fit text-lg sm:text-base font-bold sm:font-semibold gap-4'>
+        <div className='flex flex-col sm:flex-row justify-evenly items-center w-full sm:w-fit sm:text-sm font-bold sm:font-semibold gap-4'>
           <button className='w-full sm:w-fit border border-gray-500 px-3 py-2 text-gray-600 rounded-md'>
             Sign Up
           </button>
