@@ -4,6 +4,7 @@ import Head from "next/head";
 import Layout from "./layout";
 import { Hero } from "@/components/home/hero";
 import CTA from "@/components/home/cta";
+import { Services } from "@/components/home/services";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Hero />
       <CTA />
+      <Services />
     </Layout>
   );
 }
