@@ -18,6 +18,19 @@ const config: Config = {
         danger: "#eb3330",
         success: "#4aac68",
       },
+      animation: {
+        "infinite-scroll": "infinite-scroll 180s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+    },
+    screens: {
+      xs: "300px",
+      sm: "640px",
     },
   },
   plugins: [],
