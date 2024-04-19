@@ -9,7 +9,7 @@ import {
 
 const Carousel = () => {
   return (
-    <div className='bg-gradient-to-r from-slate-100 from-5% via-white/85 via-80% to-white to-15%'>
+    <div className='max-w-7xl [mask-image:linear-gradient(to_right,transparent,white_40%,white_60%,transparent)]'>
       <div className='flex justify-start sm:justify-center items-center gap-20 sm:gap-32 overflow-x-hidden'>
         <div className='flex justify-between items-center gap-14 sm:gap-24 animate-infinite-scroll'>
           <Company1 />
