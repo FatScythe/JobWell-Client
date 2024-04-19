@@ -31,6 +31,7 @@ const config: Config = {
     screens: {
       xs: "300px",
       sm: "640px",
+      lg: "900px",
     },
   },
   plugins: [],
