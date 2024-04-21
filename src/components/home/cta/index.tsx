@@ -11,12 +11,12 @@ const CTA = () => {
       </header>
 
       <footer className='w-11/12 sm:w-3/5 grid grid-cols-12 gap-4 sm:gap-10'>
-        <div className='col-span-12 bg-dark/90 text-white py-4 px-8 rounded-xl'>
+        <div className='col-span-12 bg-dark-blue text-white py-4 px-8 rounded-xl'>
           <h1 className='text-2xl sm:text-4xl font-bold'>800k+</h1>
           <h2 className='text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-blue-300 to-blue-500 mb-4'>
             Matches Made
           </h2>
-          <p className='sm:text-lg text-gray-300'>
+          <p className='sm:text-lg text-gray-300/70'>
             JobWell has been relied upon by the world's top companies to
             discover and recruit the individuals crucial to their success. Since
             our inception, we've facilitated over 800 hundred thousand
