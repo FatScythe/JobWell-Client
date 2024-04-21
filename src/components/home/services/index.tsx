@@ -7,15 +7,15 @@ import {
 
 export const Services = () => {
   return (
-    <section className='px-4 bg-slate-100/60 py-10 flex flex-col justify-start lg:justify-center lg:items-center'>
+    <section className='px-4 bg-slate-100/60 py-20 sm:py-28 flex flex-col justify-start lg:justify-center lg:items-center'>
       <header className='flex flex-col justify-start items-start lg:w-3/5 lg:mx-auto lg:text-center'>
-        <h3 className='w-full text-transparent font-bold lg:text-xl bg-clip-text bg-gradient-to-b from-blue-300 to-blue-500'>
+        <h3 className='w-full text-transparent font-bold text-base lg:text-xl bg-clip-text bg-gradient-to-b from-blue-300 to-blue-500'>
           Swift employment
         </h3>
         <h2 className='w-full text-2xl lg:text-3xl text-black/80 font-bold'>
           Unlock limitless career possibilities
         </h2>
-        <p className='lg:text-xl lg:font-semibold w-11/12 lg:mx-auto text-black/80 my-6'>
+        <p className='lg:text-xl lg:font-semibold w-full sm:w-3/4 lg:mx-auto text-black/80 my-6'>
           Everything you need to land your dream job. Connect with
           opportunities, discover your potential, and embark on a fulfilling
           career path effortlessly.
